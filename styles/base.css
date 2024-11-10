@@ -16,6 +16,10 @@ body {
     "header header "
     "card resources"
     "footer footer";
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 400;
+    font-style: normal;
+      
 }
 nav ul {
     display: flex;
@@ -33,6 +37,12 @@ nav ul li a{
 }
 footer {
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #31511E;
+    color: white;
+    font-size: 20px;
 }
 .card {
     grid-area: card;
@@ -56,4 +66,78 @@ header h1 {
     align-items: center;
     background-color: #31511E;
     color: white;
+}
+.card1{
+    margin: 0px auto 0;
+    width: 580.5px;
+    height: 255px;
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "aboutme aboutme"
+    "me myimage";
+}
+.card2 {
+    margin: 50px auto 150px;
+    width: 580.5px;
+    height: 255px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "aboutcountry aboutcountry"
+    "country countryinfo";
+}
+.me {
+    grid-area: me;
+    margin-top: 20px;
+}
+.aboutme {
+    grid-area: aboutme;
+    text-align: center;
+}
+.myimage {
+    grid-area: myimage;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.aboutcountry {
+    grid-area: aboutcountry;
+    text-align: center;
+}
+.countryinfo {
+    grid-area: countryinfo;
+    margin-top: 20px;
+}
+.country {
+    grid-area: country;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.aboutme {
+    background-color: #31511E;
+    margin-inline-start: -1.46em;
+    margin-inline-end: -1.46em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+.aboutcountry {
+    background-color: #31511E;
+    margin-inline-start: -1.46em;
+    margin-inline-end: -1.46em;
+    color: white;
+}
+.card {
+    display: grid;
+    grid-template-columns: 450px 650px 434.5px;
+    margin-top: -50px;
+    grid-template-rows: 50px 560px 50px;
+}
+.border {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: #31511E solid;
+    border-radius: 20px;
 }
