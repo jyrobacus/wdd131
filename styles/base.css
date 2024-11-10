@@ -182,7 +182,6 @@ main {
     list-style:inside;
 }
 nav a:hover {
-    font-size: 30px;
     text-decoration: underline;
 }
 footer{
