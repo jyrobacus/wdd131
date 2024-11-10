@@ -160,6 +160,7 @@ header h1 {
 }
 main {
     display: flex;
+    max-width: 100%;
 }
 .border2 {
     grid-column: 1/2;
