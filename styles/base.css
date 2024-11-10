@@ -11,11 +11,11 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 150px 1fr 80px;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "header header "
-    "card resources"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
     font-family: "Faculty Glyphic", serif;
     font-weight: 400;
     font-style: normal;
@@ -119,8 +119,8 @@ header h1 {
     background-color: #31511E;
     margin-inline-start: -1.46em;
     margin-inline-end: -1.46em;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     color: white;
 }
 .aboutcountry {
@@ -131,13 +131,57 @@ header h1 {
 }
 .card {
     display: grid;
-    grid-template-columns: 450px 650px 434.5px;
+    grid-template-columns: 450px 650px 1px;
     margin-top: -50px;
-    grid-template-rows: 50px 560px 50px;
+    grid-template-rows: 50px 560px 1px;
+    grid-column: 1/2;
 }
 .border {
     grid-column: 2/3;
     grid-row: 2/3;
     border: #31511E solid;
     border-radius: 20px;
+}
+.resources h1 {
+    background-color: #31511E;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.resources {
+    display: grid;
+    grid-template-columns: 349px 1px;
+    grid-template-rows: 50px 510px;
+    margin-left: 50px;
+}
+main {
+    display: flex;
+}
+.border2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: #31511E solid;
+    border-radius: 20px;
+}
+.resourceslink {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-decoration: underline;
+    margin-left: 50px;
+    
+}
+
+.resourceslink li {
+    margin-top: 20px;
+    list-style:inside;
+}
+nav a:hover {
+    font-size: 30px;
+    text-decoration: underline;
 }
